@@ -1,0 +1,36 @@
+.cart-item {
+  @apply flex justify-between items-center border-b-[3px] border-purple py-4 my-4;
+}
+
+.cart-item h2 {
+  @apply mb-4 ml-4 text-[#363636] text-2xl font-bold;
+}
+
+.summary {
+  @apply min-w-fit flex justify-between items-center;
+}
+
+.price {
+  @apply font-bold mx-4 text-purple;
+}
+
+.amount {
+  @apply font-bold border border-[#ccc] py-2 px-4 rounded-lg;
+}
+
+.actions {
+  @apply flex flex-col md:flex-row;
+}
+
+.cart-item button {
+  @apply text-inherit font-bold text-2xl text-purple border border-purple w-12 text-center rounded-lg bg-transparent cursor-pointer m-1 ml-4;
+}
+
+.cart-item button:hover,
+.cart-item button:active {
+  @apply bg-hover-purple text-white;
+}
+
+.cart-item button:disabled {
+  @apply opacity-70 cursor-not-allowed
+}

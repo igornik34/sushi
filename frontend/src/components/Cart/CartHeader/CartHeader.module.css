@@ -1,0 +1,25 @@
+.header {
+  @apply flex items-center justify-between mb-2 pb-2 border-b-2;
+}
+
+.header p {
+  @apply italic text-gray-500 text-xl;
+}
+
+.header button {
+  @apply w-8 h-8 cursor-pointer relative ml-auto;
+}
+
+.header button::before,
+.header button::after {
+  content: "";
+  @apply absolute w-full h-[2px] bg-black top-1/2 left-0 origin-center rounded-3xl;
+}
+
+.header button::before {
+  @apply -rotate-45;
+}
+
+.header button::after {
+  @apply rotate-45;
+}

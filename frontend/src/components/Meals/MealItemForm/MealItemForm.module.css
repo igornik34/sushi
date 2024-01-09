@@ -1,0 +1,18 @@
+.form button {
+  @apply cursor-pointer text-inherit bg-purple text-white py-1 px-8 rounded-[20px] font-bold;
+}
+.form button {
+  @apply cursor-pointer text-inherit bg-purple text-white py-1 px-8 rounded-[20px] font-bold;
+}
+
+.form button:hover,
+.form button:active {
+  @apply bg-hover-purple 
+}
+.form button:disabled {
+  @apply bg-opacity-70 cursor-not-allowed
+}
+
+.total-count {
+  @apply italic text-right mb-2 text-red-600 font-semibold
+}

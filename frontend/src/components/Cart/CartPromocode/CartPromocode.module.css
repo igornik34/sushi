@@ -1,0 +1,15 @@
+.promocode input {
+  @apply block min-w-20 w-1/2 md:w-full py-2 px-4;
+}
+
+.promocode {
+  @apply md:flex items-center gap-4;
+}
+
+.promocode div {
+  @apply mb-4 md:mb-0;
+}
+
+.cross {
+  @apply absolute inset-y-0 right-0 flex items-center px-2 cursor-pointer z-20;
+}

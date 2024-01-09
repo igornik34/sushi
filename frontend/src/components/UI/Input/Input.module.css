@@ -1,0 +1,11 @@
+.input {
+    @apply mb-4
+}
+
+.input label {
+    @apply font-bold mr-4
+}
+
+.input input {
+    @apply w-16 rounded-md border border-[#ccc] text-inherit pl-4
+}

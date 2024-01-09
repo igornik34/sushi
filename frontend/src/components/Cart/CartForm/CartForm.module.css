@@ -1,0 +1,25 @@
+.actions {
+  @apply text-right pt-4 min-h-full;
+}
+
+.actions .button--alt {
+  @apply text-purple;
+}
+
+.actions .button {
+  @apply bg-purple text-white;
+}
+
+.block-form {
+  @apply flex flex-wrap gap-x-4 text-left mx-auto;
+}
+.block-form > div {
+  @apply flex-grow;
+}
+.block-form input {
+  @apply block w-full px-4 py-2;
+}
+
+.buttons {
+  @apply mt-auto
+}

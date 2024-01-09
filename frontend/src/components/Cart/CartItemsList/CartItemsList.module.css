@@ -1,0 +1,23 @@
+.items {
+  @apply list-none m-0 p-0 max-h-80 overflow-auto;
+}
+
+/* Ширина и цвет полосы прокрутки */
+.items::-webkit-scrollbar {
+  @apply w-2 bg-gray-500 rounded-full;
+}
+
+/* Фон самого скроллбара */
+.items::-webkit-scrollbar-track {
+  @apply bg-gray-300 rounded-full;
+}
+
+/* Изображение для видимой области */
+.items::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 rounded-full;
+}
+
+/* При наведении на скроллбар */
+.items::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-700;
+}

@@ -1,0 +1,11 @@
+.status {
+    @apply flex flex-col items-center gap-2
+}
+
+.status p {
+    @apply text-2xl text-center
+}
+
+.cross {
+    @apply border-2 w-28 h-28 flex items-center justify-center border-red-900 rounded-full
+}

@@ -1,0 +1,43 @@
+.button {
+  @apply cursor-pointer text-inherit bg-dark-purple text-white py-2 px-12 flex justify-around items-center rounded-[25px] font-bold;
+}
+
+.button:hover,
+.button:active {
+  @apply bg-hover-purple;
+}
+
+.icon {
+  @apply w-6 h-6 mr-4;
+}
+
+.badge {
+    @apply bg-pink py-[0.2rem] px-4 rounded-[20px] ml-6 font-bold
+}
+
+.button:hover .badge,
+.button:active .badge {
+  @apply bg-hover-pink
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

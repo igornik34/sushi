@@ -1,0 +1,19 @@
+.total {
+  @apply flex items-end font-bold text-2xl my-4 mx-0 text-right gap-x-2;
+}
+
+.footer {
+  @apply md:flex justify-between items-center;
+}
+
+.message {
+  @apply block h-4 mt-3;
+}
+
+.total-sum {
+  @apply inline-flex flex-col items-center justify-end
+}
+
+.total-without-discount {
+  @apply self-end line-through text-sm italic text-gray-500
+}

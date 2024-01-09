@@ -1,0 +1,15 @@
+.meal {
+  @apply flex justify-between m-4 pb-4 border-b border-[#ccc];
+}
+
+.meal h3 {
+  @apply mb-1 text-xl font-bold;
+}
+
+.description {
+  @apply italic;
+}
+
+.price {
+  @apply mt-1 font-bold text-purple text-xl;
+}

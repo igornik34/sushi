@@ -1,0 +1,16 @@
+.header {
+  @apply fixed top-0 left-0 w-full h-20 bg-purple text-white flex justify-between items-center px-[10%] shadow-md z-10;
+}
+
+.header h1 {
+  @apply text-3xl font-bold
+}
+
+.main-image {
+  @apply w-full h-[25rem] z-0 overflow-hidden;
+}
+
+.main-image img {
+  @apply w-[120%] h-full object-cover;
+  transform: rotateZ(-7deg) translateY(-2rem) translateX(5rem);
+}
