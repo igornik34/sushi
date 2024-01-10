@@ -7,17 +7,18 @@ const defaultUserState = {
   city: "",
   street: "",
   home: "",
+  userFilled: false
 };
 
 function userReducer(state, action) {
   if (action.type === "SET_INFO") {
     return {
-      ...state,
       name: action.info.name,
       phone_number: action.info.phone_number,
       city: action.info.city,
       street: action.info.street,
       home: action.info.home,
+      userFilled: true
     };
   }
   return defaultUserState;
@@ -38,6 +39,7 @@ function UserContextProvider({ children }) {
     city: userState.city,
     street: userState.street,
     home: userState.home,
+    userFilled: userState.userFilled,
     setInfo: setInfoUserHandler,
   };
   return (

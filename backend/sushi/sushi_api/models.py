@@ -27,7 +27,7 @@ class Order(models.Model):
     street = models.CharField(max_length=100)
     home = models.CharField(max_length=5)
     sum_order = models.DecimalField(max_digits=6, decimal_places=2)
-    promocode = models.CharField(max_length=100)
+    promocode = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
         return f"Order #{self.id} - {self.name}"

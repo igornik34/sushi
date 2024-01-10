@@ -13,7 +13,7 @@ class OrderedSushiSerializer(serializers.ModelSerializer):
 
 class OrderSerializer(serializers.ModelSerializer):
     sushi_orders = OrderedSushiSerializer(many=True)
-
+    promocode = serializers.CharField(allow_null=True, allow_blank=True)
     class Meta:
         model = Order
         fields = ('name', 'phone_number', 'city', 'street', 'home', 'sushi_orders', 'promocode', 'sum_order')

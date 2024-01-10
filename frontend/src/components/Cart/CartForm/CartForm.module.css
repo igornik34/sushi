@@ -13,6 +13,9 @@
 .block-form {
   @apply flex flex-wrap gap-x-4 text-left mx-auto;
 }
+.block-form > div:nth-child(-n+2) {
+  @apply flex-[0_0_48%] flex-grow;
+}
 .block-form > div {
   @apply flex-grow;
 }

@@ -6,6 +6,7 @@ const UserContext = createContext({
     city: '',
     street: '',
     home: '',
+    userFilled: false,
     setInfo: (info) => {}
 })
 

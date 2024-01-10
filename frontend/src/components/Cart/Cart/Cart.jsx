@@ -29,18 +29,20 @@ function Cart(props) {
   const hasItems = !!ctxCart.items.length;
 
   // Ваш обработчик заказа
-  async function orderHandler(userInfo) {
+  async function orderHandler() {
     setIsLoading(true);
-    ctxUser.setInfo(userInfo)
-    
+
+    console.log(ctxUser);
     const orderInfo = {
-      name: userInfo.name,
-      phone_number: userInfo.phone_number,
-      city: userInfo.city,
-      street: userInfo.street,
-      home: userInfo.home,
-      sum_order: ctxCart.totalAmountWithDiscount ? ctxCart.totalAmountWithDiscount : ctxCart.totalAmountWithDiscount,
-      promocode: ctxCart.promocodeApply && ctxCart.promocode.inputPromocode,
+      name: ctxUser.name,
+      phone_number: ctxUser.phone_number,
+      city: ctxUser.city,
+      street: ctxUser.street,
+      home: ctxUser.home,
+      sum_order: ctxCart.totalAmountWithDiscount
+        ? ctxCart.totalAmountWithDiscount.toFixed(2)
+        : ctxCart.totalAmount.toFixed(2),
+      promocode: ctxCart.promocodeApply ? ctxCart.promocode.inputPromocode : "",
       sushi_orders: ctxCart.items.map((item) => ({
         sushi: item.id,
         amount: item.amount,
